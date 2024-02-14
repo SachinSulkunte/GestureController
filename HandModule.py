@@ -12,8 +12,7 @@ class handDet():
 
         # mediapipe functions to detect hands
         self.detHands = mp.solutions.hands
-        self.hands = self.detHands.Hands(self.mode, self.maxHands,
-                                         self.detConfidence, self.trackConfidence)
+        self.hands = self.detHands.Hands()
         self.mpDraw = mp.solutions.drawing_utils
 
     def getHands(self, img, draw=True):
